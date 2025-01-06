@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    background: #eaf0f7c2;;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 800px) {
+    .header h1{
+        font-size: 18px;
+    }
+}

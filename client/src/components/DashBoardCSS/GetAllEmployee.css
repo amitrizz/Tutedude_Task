@@ -1,0 +1,121 @@
+.getAllemployee {
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.navbar {
+    /* background: #d6adad85; */
+    flex-basis: 15%;
+}
+
+.sidebar {
+    border-top-left-radius: 5px;
+    flex-basis: 85%;
+    background: #babebdb4;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    padding-top: 10px;
+}
+
+.Filters {
+    /* background: #fc9b9b; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* flex-direction: row; */
+    height: 50px;
+    margin-bottom: 5px;
+
+}
+
+.filter1 {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background: #fdf1f18c;
+}
+
+.filter1 button {
+    margin-right: 10px;
+}
+
+.link-styles {
+    text-decoration: none;
+    color: rgba(72, 79, 99, 0.747);
+}
+
+.filter2 {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background: #fdf1f18c;
+}
+
+.filter2 select {
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter3 select {
+    width: 65%;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter3 {
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background: #fdf1f18c;
+    justify-content: space-between;
+    padding: 5px;
+    flex-basis: 30%;
+}
+
+table {
+    margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .getAllemployee {
+        /* background-color: lightblue; */
+        flex-direction: column;
+    }
+
+    .Filters {
+        flex-direction: column;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        /* margin-left: 10px;
+        margin-right: 20px; */
+        padding: 10px;
+    }
+
+    .tableStyle {
+        margin-top:50px;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .table thead th {
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+}
