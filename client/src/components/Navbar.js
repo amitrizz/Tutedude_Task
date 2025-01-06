@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './DashBoardCSS/Navbar.css'
 
 function Navbar() {
+    const token = localStorage.getItem("token");
     const navigate = useNavigate();
     function logoutUser() {
         localStorage.removeItem('token')
@@ -38,7 +39,7 @@ function Navbar() {
 
                     {/* Navbar Links */}
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto">
+                       {token && <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
                                 <Link to="/friend-list" className="nav-link active">Friend List</Link>
                             </li>
@@ -53,7 +54,7 @@ function Navbar() {
                                     Logout
                                 </button>
                             </li>
-                        </ul>
+                        </ul>}
                     </div>
                 </div>
             </nav>
